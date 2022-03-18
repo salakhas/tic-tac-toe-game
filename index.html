@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+	<div id="main">
+		<h1>TIC TAC TOE</h1>
+
+		<!--Instructions -->
+		<p id="instructions">Tap on a box below to start playing!
+			<br><br>First Player starts as
+			<u>Player X</u><br>And<br>Second
+			Player as <u>Player 0</u>
+		</p>
+
+        <br><br>
+		<!-- Boxes To Click-->
+		<input type="text" id="box1" onclick=
+			"alternate1(); checkFn();" readonly>
+
+		<input type="text" id="box2" onclick=
+			"alternate2(); checkFn();" readonly>
+
+		<input type="text" id="box3" onclick=
+			"alternate3(); checkFn();" readonly>
+		<br><br>
+
+		<input type="text" id="box4" onclick=
+			"alternate4(); checkFn();" readonly>
+			
+		<input type="text" id="box5" onclick=
+			"alternate5(); checkFn();" readonly>
+
+		<input type="text" id="box6" onclick=
+			"alternate6(); checkFn();" readonly>
+		<br><br>
+
+		<input type="text" id="box7" onclick=
+			"alternate7(); checkFn();" readonly>
+
+		<input type="text" id="box8" onclick=
+			"alternate8();checkFn();" readonly>
+
+		<input type="text" id="box9" onclick=
+			"alternate9();checkFn();" readonly>
+
+		<!-- Grid ends here -->
+		<br><br><br>
+		<!-- Reset Button -->
+		<button id="button" onclick="reset()">
+			RESET
+		</button>
+
+		<br><br>
+		<!-- Space to show player turn -->
+		<p id="print"></p>
+
+
+
+
+	</div>
+</body>
+<script src="index.js"></script>
+</html>
